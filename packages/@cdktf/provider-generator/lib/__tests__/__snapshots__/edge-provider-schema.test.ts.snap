@@ -1475,7 +1475,7 @@ export class RequiredAttributeResource extends cdktf.TerraformResource {
 `;
 
 exports[`Edge Provider Schema compiles to Typescript: set-block-resource.ts 1`] = `
-"// https://www.terraform.io/docs/providers/edge/r/set_block_resource.html
+"// https://www.terraform.io/docs/providers/edge/r/set_block_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -1487,45 +1487,45 @@ export interface SetBlockResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * set block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#set SetBlockResource#set}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#set SetBlockResource#set}
   */
   readonly set?: SetBlockResourceSet[];
 }
 export interface SetBlockResourceSet {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#optstr SetBlockResource#optstr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#optstr SetBlockResource#optstr}
   */
   readonly optstr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#optnum SetBlockResource#optnum}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#optnum SetBlockResource#optnum}
   */
   readonly optnum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#optbool SetBlockResource#optbool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#optbool SetBlockResource#optbool}
   */
   readonly optbool?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#reqstr SetBlockResource#reqstr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#reqstr SetBlockResource#reqstr}
   */
   readonly reqstr: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#reqnum SetBlockResource#reqnum}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#reqnum SetBlockResource#reqnum}
   */
   readonly reqnum: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#reqbool SetBlockResource#reqbool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#reqbool SetBlockResource#reqbool}
   */
   readonly reqbool: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#computedstr SetBlockResource#computedstr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#computedstr SetBlockResource#computedstr}
   */
   readonly computedstr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#computednum SetBlockResource#computednum}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#computednum SetBlockResource#computednum}
   */
   readonly computednum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html#computedbool SetBlockResource#computedbool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource#computedbool SetBlockResource#computedbool}
   */
   readonly computedbool?: boolean | cdktf.IResolvable;
 }
@@ -1550,7 +1550,7 @@ export function setBlockResourceSetToTerraform(struct?: SetBlockResourceSet): an
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html set_block_resource}
+* Represents a {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource set_block_resource}
 */
 export class SetBlockResource extends cdktf.TerraformResource {
 
@@ -1564,7 +1564,7 @@ export class SetBlockResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource.html set_block_resource} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/edge/r/set_block_resource set_block_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

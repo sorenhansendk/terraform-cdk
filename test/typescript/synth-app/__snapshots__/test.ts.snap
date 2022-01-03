@@ -40,9 +40,7 @@ exports[`full integration test synth synth generates JSON 1`] = `
       {
         \\"region\\": \\"eu-central-1\\",
         \\"ignore_tags\\": {
-          \\"keys\\": [
-            \\"foo\\"
-          ]
+          \\"keys\\": \\"\${toset([\\\\\\"foo\\\\\\"])}\\"
         }
       }
     ]
@@ -70,12 +68,7 @@ exports[`full integration test synth synth generates JSON 1`] = `
         \\"credit_specification\\": {
           \\"cpu_credits\\": \\"standard\\"
         },
-        \\"ebs_block_device\\": [
-          {
-            \\"device_name\\": \\"/dev/sda1\\",
-            \\"volume_size\\": 100
-          }
-        ],
+        \\"ebs_block_device\\": \\"\${toset([{device_name = \\\\\\"/dev/sda1\\\\\\", volume_size = 100}])}\\",
         \\"metadata_options\\": {
           \\"http_endpoint\\": \\"true\\"
         },
@@ -110,34 +103,7 @@ exports[`full integration test synth synth generates JSON 1`] = `
         \\"default_action\\": {
           \\"allow\\": {}
         },
-        \\"rule\\": [
-          {
-            \\"name\\": \\"managed-rule-example\\",
-            \\"priority\\": 1,
-            \\"override_action\\": {
-              \\"count\\": {}
-            },
-            \\"statement\\": {
-              \\"managed_rule_group_statement\\": {
-                \\"name\\": \\"managed-rule-example\\",
-                \\"vendor_name\\": \\"AWS\\",
-                \\"excluded_rule\\": [
-                  {
-                    \\"name\\": \\"SizeRestrictions_QUERYSTRING\\"
-                  },
-                  {
-                    \\"name\\": \\"SQLInjection_QUERYSTRING\\"
-                  }
-                ]
-              }
-            },
-            \\"visibility_config\\": {
-              \\"cloudwatch_metrics_enabled\\": true,
-              \\"metric_name\\": \\"managed-rule-example\\",
-              \\"sampled_requests_enabled\\": true
-            }
-          }
-        ],
+        \\"rule\\": \\"\${toset([{name = \\\\\\"managed-rule-example\\\\\\", priority = 1, override_action = {count = {}}, statement = {managed_rule_group_statement = {name = \\\\\\"managed-rule-example\\\\\\", vendor_name = \\\\\\"AWS\\\\\\", excluded_rule = [{name = \\\\\\"SizeRestrictions_QUERYSTRING\\\\\\"}, {name = \\\\\\"SQLInjection_QUERYSTRING\\\\\\"}]}}, visibility_config = {cloudwatch_metrics_enabled = true, metric_name = \\\\\\"managed-rule-example\\\\\\", sampled_requests_enabled = true}}])}\\",
         \\"visibility_config\\": {
           \\"cloudwatch_metrics_enabled\\": true,
           \\"metric_name\\": \\"managed-rule-example\\",
