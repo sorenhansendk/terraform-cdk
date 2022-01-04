@@ -90,14 +90,14 @@ export class AttributeModel {
       this.computed &&
       !this.isOptional &&
       this.type.isComputedComplex &&
-      (this.type.isList || this.type.isSet) && // FIXME: write edge provider test covering this
+      this.type.isList &&
       this.type.isMap
     ) {
       getterType = {
         _type: "args",
         args: "index: string, key: string",
         returnType: this.mapType,
-        returnStatement: `new ${this.type.name}(this, \`${this.terraformName}.\${index}\`, ${this.type.isSet}).lookup(key)`,
+        returnStatement: `new ${this.type.name}(this, \`${this.terraformName}.\${index}\`).lookup(key)`,
       };
     } else if (
       // Complex Computed List
@@ -133,7 +133,7 @@ export class AttributeModel {
     return getterType;
   }
 
-  public get mapType(): string {
+  public get mapType() {
     const type = this.type;
     if (type.isStringMap) {
       return `string`;
