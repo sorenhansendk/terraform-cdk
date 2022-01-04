@@ -4,11 +4,12 @@ exports[`python full integration test assets synth generates JSON and copies fil
 "{
   \\"//\\": {
     \\"metadata\\": {
-      \\"version\\": \\"stubbed\\",
+      \\"backend\\": \\"local\\",
       \\"stackName\\": \\"python-assets\\",
-      \\"backend\\": \\"local\\"
+      \\"version\\": \\"stubbed\\"
     }
   },
+<<<<<<< HEAD
   \\"terraform\\": {
     \\"backend\\": {
       \\"local\\": {
@@ -20,6 +21,20 @@ exports[`python full integration test assets synth generates JSON and copies fil
         \\"version\\": \\"~> 3.1.0\\",
         \\"source\\": \\"hashicorp/null\\"
       }
+<<<<<<< HEAD
+=======
+    },
+    \\"backend\\": {
+      \\"local\\": {}
+=======
+  \\"output\\": {
+    \\"fixtureoutput\\": {
+      \\"value\\": \\"assets/fixture/hash/fixture.txt\\"
+    },
+    \\"fixturesoutput\\": {
+      \\"value\\": \\"assets/fixtures/hash/archive.zip\\"
+>>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
+>>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -39,12 +54,12 @@ exports[`python full integration test assets synth generates JSON and copies fil
       }
     }
   },
-  \\"output\\": {
-    \\"fixtureoutput\\": {
-      \\"value\\": \\"assets/fixture/hash/fixture.txt\\"
-    },
-    \\"fixturesoutput\\": {
-      \\"value\\": \\"assets/fixtures/hash/archive.zip\\"
+  \\"terraform\\": {
+    \\"required_providers\\": {
+      \\"null\\": {
+        \\"source\\": \\"hashicorp/null\\",
+        \\"version\\": \\"~> 3.1.0\\"
+      }
     }
   }
 }"

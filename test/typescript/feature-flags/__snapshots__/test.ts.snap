@@ -4,13 +4,12 @@ exports[`full integration test with allowSepCharsInLogicalIds feature 1`] = `
 "{
   \\"//\\": {
     \\"metadata\\": {
-      \\"version\\": \\"stubbed\\",
-      \\"stackName\\": \\"hello-deploy\\",
       \\"backend\\": \\"local\\",
       \\"overrides\\": {
         \\"null_resource\\": [
           \\"provisioner\\"
         ]
+<<<<<<< HEAD
       }
     }
   },
@@ -25,29 +24,49 @@ exports[`full integration test with allowSepCharsInLogicalIds feature 1`] = `
         \\"version\\": \\"undefined\\",
         \\"source\\": \\"null\\"
       }
+<<<<<<< HEAD
+=======
+    },
+    \\"backend\\": {
+      \\"local\\": {}
+=======
+      },
+      \\"stackName\\": \\"hello-deploy\\",
+      \\"version\\": \\"stubbed\\"
+>>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
+>>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
     \\"null\\": [
-      {}
+      {
+      }
     ]
   },
   \\"resource\\": {
     \\"null_resource\\": {
       \\"hello-deploy_test-Foo_Bar_186E52EA\\": {
+        \\"//\\": {
+          \\"metadata\\": {
+            \\"path\\": \\"hello-deploy/test-Foo_Bar\\",
+            \\"uniqueId\\": \\"hello-deploy_test-Foo_Bar_186E52EA\\"
+          }
+        },
         \\"provisioner\\": [
           {
             \\"local-exec\\": {
               \\"command\\": \\"echo \\\\\\"hello deploy\\\\\\"\\"
             }
           }
-        ],
-        \\"//\\": {
-          \\"metadata\\": {
-            \\"path\\": \\"hello-deploy/test-Foo_Bar\\",
-            \\"uniqueId\\": \\"hello-deploy_test-Foo_Bar_186E52EA\\"
-          }
-        }
+        ]
+      }
+    }
+  },
+  \\"terraform\\": {
+    \\"required_providers\\": {
+      \\"null\\": {
+        \\"source\\": \\"null\\",
+        \\"version\\": \\"undefined\\"
       }
     }
   }
@@ -58,13 +77,12 @@ exports[`full integration test with excludeStackIdFromLogicalIds feature 1`] = `
 "{
   \\"//\\": {
     \\"metadata\\": {
-      \\"version\\": \\"stubbed\\",
-      \\"stackName\\": \\"hello-deploy\\",
       \\"backend\\": \\"local\\",
       \\"overrides\\": {
         \\"null_resource\\": [
           \\"provisioner\\"
         ]
+<<<<<<< HEAD
       }
     }
   },
@@ -79,29 +97,49 @@ exports[`full integration test with excludeStackIdFromLogicalIds feature 1`] = `
         \\"version\\": \\"undefined\\",
         \\"source\\": \\"null\\"
       }
+<<<<<<< HEAD
+=======
+    },
+    \\"backend\\": {
+      \\"local\\": {}
+=======
+      },
+      \\"stackName\\": \\"hello-deploy\\",
+      \\"version\\": \\"stubbed\\"
+>>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
+>>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
     \\"null\\": [
-      {}
+      {
+      }
     ]
   },
   \\"resource\\": {
     \\"null_resource\\": {
       \\"testFooBar\\": {
+        \\"//\\": {
+          \\"metadata\\": {
+            \\"path\\": \\"hello-deploy/test-Foo_Bar\\",
+            \\"uniqueId\\": \\"testFooBar\\"
+          }
+        },
         \\"provisioner\\": [
           {
             \\"local-exec\\": {
               \\"command\\": \\"echo \\\\\\"hello deploy\\\\\\"\\"
             }
           }
-        ],
-        \\"//\\": {
-          \\"metadata\\": {
-            \\"path\\": \\"hello-deploy/test-Foo_Bar\\",
-            \\"uniqueId\\": \\"testFooBar\\"
-          }
-        }
+        ]
+      }
+    }
+  },
+  \\"terraform\\": {
+    \\"required_providers\\": {
+      \\"null\\": {
+        \\"source\\": \\"null\\",
+        \\"version\\": \\"undefined\\"
       }
     }
   }
@@ -112,13 +150,12 @@ exports[`full integration test without features 1`] = `
 "{
   \\"//\\": {
     \\"metadata\\": {
-      \\"version\\": \\"stubbed\\",
-      \\"stackName\\": \\"hello-deploy\\",
       \\"backend\\": \\"local\\",
       \\"overrides\\": {
         \\"null_resource\\": [
           \\"provisioner\\"
         ]
+<<<<<<< HEAD
       }
     }
   },
@@ -133,29 +170,49 @@ exports[`full integration test without features 1`] = `
         \\"version\\": \\"undefined\\",
         \\"source\\": \\"null\\"
       }
+<<<<<<< HEAD
+=======
+    },
+    \\"backend\\": {
+      \\"local\\": {}
+=======
+      },
+      \\"stackName\\": \\"hello-deploy\\",
+      \\"version\\": \\"stubbed\\"
+>>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
+>>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
     \\"null\\": [
-      {}
+      {
+      }
     ]
   },
   \\"resource\\": {
     \\"null_resource\\": {
       \\"hellodeploy_testFooBar_186E52EA\\": {
+        \\"//\\": {
+          \\"metadata\\": {
+            \\"path\\": \\"hello-deploy/test-Foo_Bar\\",
+            \\"uniqueId\\": \\"hellodeploy_testFooBar_186E52EA\\"
+          }
+        },
         \\"provisioner\\": [
           {
             \\"local-exec\\": {
               \\"command\\": \\"echo \\\\\\"hello deploy\\\\\\"\\"
             }
           }
-        ],
-        \\"//\\": {
-          \\"metadata\\": {
-            \\"path\\": \\"hello-deploy/test-Foo_Bar\\",
-            \\"uniqueId\\": \\"hellodeploy_testFooBar_186E52EA\\"
-          }
-        }
+        ]
+      }
+    }
+  },
+  \\"terraform\\": {
+    \\"required_providers\\": {
+      \\"null\\": {
+        \\"source\\": \\"null\\",
+        \\"version\\": \\"undefined\\"
       }
     }
   }
