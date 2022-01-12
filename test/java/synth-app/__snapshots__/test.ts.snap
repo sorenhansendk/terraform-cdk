@@ -6,37 +6,7 @@ exports[`java full integration synth generates JSON 1`] = `
     \\"metadata\\": {
       \\"backend\\": \\"local\\",
       \\"stackName\\": \\"java-simple\\",
-<<<<<<< HEAD
-      \\"backend\\": \\"local\\"
-    }
-  },
-  \\"terraform\\": {
-    \\"backend\\": {
-      \\"local\\": {
-        \\"path\\": \\"terraform.tfstate\\"
-      }
-    },
-    \\"required_providers\\": {
-      \\"null\\": {
-        \\"version\\": \\"~> 3.1.0\\",
-        \\"source\\": \\"hashicorp/null\\"
-      },
-      \\"random\\": {
-        \\"version\\": \\"~> 3.1.0\\",
-        \\"source\\": \\"hashicorp/random\\"
-      }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    },
-    \\"backend\\": {
-      \\"local\\": {}
-=======
-=======
       \\"version\\": \\"stubbed\\"
->>>>>>> 2651030d (wip - broken)
->>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
->>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -60,20 +30,29 @@ exports[`java full integration synth generates JSON 1`] = `
     },
     \\"random_string\\": {
       \\"RandomString\\": {
-        \\"length\\": 42,
         \\"//\\": {
           \\"metadata\\": {
             \\"path\\": \\"java-simple/RandomString\\",
             \\"uniqueId\\": \\"RandomString\\"
           }
-        }
+        },
+        \\"length\\": 42
       }
     }
   },
   \\"terraform\\": {
+    \\"backend\\": {
+      \\"local\\": {
+        \\"path\\": \\"terraform.tfstate\\"
+      }
+    },
     \\"required_providers\\": {
       \\"null\\": {
         \\"source\\": \\"hashicorp/null\\",
+        \\"version\\": \\"~> 3.1.0\\"
+      },
+      \\"random\\": {
+        \\"source\\": \\"hashicorp/random\\",
         \\"version\\": \\"~> 3.1.0\\"
       }
     }

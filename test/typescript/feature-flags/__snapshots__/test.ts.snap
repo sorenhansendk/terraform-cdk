@@ -9,32 +9,9 @@ exports[`full integration test with allowSepCharsInLogicalIds feature 1`] = `
         \\"null_resource\\": [
           \\"provisioner\\"
         ]
-<<<<<<< HEAD
-      }
-    }
-  },
-  \\"terraform\\": {
-    \\"backend\\": {
-      \\"local\\": {
-        \\"path\\": \\"terraform.tfstate\\"
-      }
-    },
-    \\"required_providers\\": {
-      \\"null\\": {
-        \\"version\\": \\"undefined\\",
-        \\"source\\": \\"null\\"
-      }
-<<<<<<< HEAD
-=======
-    },
-    \\"backend\\": {
-      \\"local\\": {}
-=======
       },
       \\"stackName\\": \\"hello-deploy\\",
       \\"version\\": \\"stubbed\\"
->>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
->>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -63,6 +40,11 @@ exports[`full integration test with allowSepCharsInLogicalIds feature 1`] = `
     }
   },
   \\"terraform\\": {
+    \\"backend\\": {
+      \\"local\\": {
+        \\"path\\": \\"terraform.tfstate\\"
+      }
+    },
     \\"required_providers\\": {
       \\"null\\": {
         \\"source\\": \\"null\\",
@@ -82,32 +64,9 @@ exports[`full integration test with excludeStackIdFromLogicalIds feature 1`] = `
         \\"null_resource\\": [
           \\"provisioner\\"
         ]
-<<<<<<< HEAD
-      }
-    }
-  },
-  \\"terraform\\": {
-    \\"backend\\": {
-      \\"local\\": {
-        \\"path\\": \\"terraform.tfstate\\"
-      }
-    },
-    \\"required_providers\\": {
-      \\"null\\": {
-        \\"version\\": \\"undefined\\",
-        \\"source\\": \\"null\\"
-      }
-<<<<<<< HEAD
-=======
-    },
-    \\"backend\\": {
-      \\"local\\": {}
-=======
       },
       \\"stackName\\": \\"hello-deploy\\",
       \\"version\\": \\"stubbed\\"
->>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
->>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -136,6 +95,11 @@ exports[`full integration test with excludeStackIdFromLogicalIds feature 1`] = `
     }
   },
   \\"terraform\\": {
+    \\"backend\\": {
+      \\"local\\": {
+        \\"path\\": \\"terraform.tfstate\\"
+      }
+    },
     \\"required_providers\\": {
       \\"null\\": {
         \\"source\\": \\"null\\",
@@ -155,32 +119,9 @@ exports[`full integration test without features 1`] = `
         \\"null_resource\\": [
           \\"provisioner\\"
         ]
-<<<<<<< HEAD
-      }
-    }
-  },
-  \\"terraform\\": {
-    \\"backend\\": {
-      \\"local\\": {
-        \\"path\\": \\"terraform.tfstate\\"
-      }
-    },
-    \\"required_providers\\": {
-      \\"null\\": {
-        \\"version\\": \\"undefined\\",
-        \\"source\\": \\"null\\"
-      }
-<<<<<<< HEAD
-=======
-    },
-    \\"backend\\": {
-      \\"local\\": {}
-=======
       },
       \\"stackName\\": \\"hello-deploy\\",
       \\"version\\": \\"stubbed\\"
->>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
->>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -209,6 +150,11 @@ exports[`full integration test without features 1`] = `
     }
   },
   \\"terraform\\": {
+    \\"backend\\": {
+      \\"local\\": {
+        \\"path\\": \\"terraform.tfstate\\"
+      }
+    },
     \\"required_providers\\": {
       \\"null\\": {
         \\"source\\": \\"null\\",

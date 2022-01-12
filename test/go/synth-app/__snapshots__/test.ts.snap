@@ -6,30 +6,7 @@ exports[`Go full integration test synth synth generates JSON 1`] = `
     \\"metadata\\": {
       \\"backend\\": \\"local\\",
       \\"stackName\\": \\"go-simple\\",
-<<<<<<< HEAD
-      \\"backend\\": \\"local\\"
-    }
-  },
-  \\"terraform\\": {
-    \\"backend\\": {
-      \\"local\\": {
-        \\"path\\": \\"terraform.tfstate\\"
-      }
-    },
-    \\"required_providers\\": {
-      \\"random\\": {
-        \\"version\\": \\"~> 3.1.0\\",
-        \\"source\\": \\"hashicorp/random\\"
-      }
-<<<<<<< HEAD
-=======
-    },
-    \\"backend\\": {
-      \\"local\\": {}
-=======
       \\"version\\": \\"stubbed\\"
->>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
->>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -51,6 +28,11 @@ exports[`Go full integration test synth synth generates JSON 1`] = `
     }
   },
   \\"terraform\\": {
+    \\"backend\\": {
+      \\"local\\": {
+        \\"path\\": \\"terraform.tfstate\\"
+      }
+    },
     \\"required_providers\\": {
       \\"random\\": {
         \\"source\\": \\"hashicorp/random\\",

@@ -17,32 +17,9 @@ exports[`python terraform functions test synth synth generates JSON 1`] = `
       \\"version\\": \\"stubbed\\"
     }
   },
-<<<<<<< HEAD
-  \\"terraform\\": {
-    \\"backend\\": {
-      \\"local\\": {
-        \\"path\\": \\"terraform.tfstate\\"
-      },
-      \\"remote\\": {
-        \\"organization\\": \\"test\\",
-        \\"workspaces\\": {
-          \\"name\\": \\"test\\"
-        }
-      }
-<<<<<<< HEAD
-    },
-    \\"required_providers\\": {
-      \\"null\\": {
-        \\"version\\": \\"~> 3.1.0\\",
-        \\"source\\": \\"hashicorp/null\\"
-      }
-=======
-=======
   \\"output\\": {
     \\"computed\\": {
       \\"value\\": \\"\${element(merge({id = null_resource.nullresource.id}, {value = \\\\\\"123\\\\\\"}), 1)}\\"
->>>>>>> 967a8694 (feat(lib): produce stable `cdk.tf.json` output)
->>>>>>> d7803082 (feat(lib): produce stable `cdk.tf.json` output)
     }
   },
   \\"provider\\": {
@@ -67,6 +44,9 @@ exports[`python terraform functions test synth synth generates JSON 1`] = `
   },
   \\"terraform\\": {
     \\"backend\\": {
+      \\"local\\": {
+        \\"path\\": \\"terraform.tfstate\\"
+      },
       \\"remote\\": {
         \\"organization\\": \\"test\\",
         \\"workspaces\\": {
